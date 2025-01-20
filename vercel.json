@@ -17,16 +17,16 @@
       }
     ],
     "headers": [
+  {
+    "source": "/(.*)",
+    "headers": [
       {
-        "source": "/(.*)",
-        "headers": [
-          {
-            "key": "Content-Security-Policy",
-            "value": "default-src 'none'; style-src 'self' https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css https://edu-ycmg.vercel.app; font-src 'self' https://edu-ycmg.vercel.app data:; img-src 'self' https://edu-ycmg.vercel.app; script-src 'self';"
-            
-          }
-        ]
+        "key": "Content-Security-Policy",
+        "value": "default-src 'none'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css https://edu-ycmg.vercel.app; font-src 'self' https://edu-ycmg.vercel.app data: https://cdnjs.cloudflare.com; img-src 'self' https://edu-ycmg.vercel.app; script-src 'self';"
       }
     ]
+  }
+]
+
   }
   
