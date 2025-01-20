@@ -1,4 +1,5 @@
-{
+
+  {
     "version": 2,
     "builds": [
       {
@@ -7,15 +8,13 @@
       }
     ],
     "rewrites": [
-        {
-            "src": "/public/(.*)",
-            "dest": "/public/$1"
-          },
+      {
+        "source": "/public/(.*)",
+        "destination": "/public/$1"
+      },
       {
         "source": "/(.*)",
         "destination": "/app.js"
       }
     ]
-
   }
-  
