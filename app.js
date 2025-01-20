@@ -1,27 +1,32 @@
-const express=require("express");
-const app=express();
-const path=require("path");
-const port=8800;
+// 
+const express = require("express");
+const app = express();
+const path = require("path");
+const port = 8800;
 
-app.set("view engine","ejs");
+app.set("view engine", "ejs");
 
 app.use(express.urlencoded({ extended: true }));
 
-app.use(express.static('public'));
+app.use(express.static('public'));  // Serve static files from the public directory
+app.set('views', path.join(__dirname, 'views'));  // Set the views directory
 
-app.get(("/form"),(req, res)=>{
+// Route for the form
+app.get("/form", (req, res) => {
     res.render("form.ejs");
-
 });
-app.get(("/thankyou"),(req,res)=>{
+
+// Route for the thank you page
+app.get("/thankyou", (req, res) => {
     res.render("thankyou.ejs");
 });
 
-app.get("/",(req,res)=>{
-    res.render("index.ejs")
+// Route for the homepage
+app.get("/", (req, res) => {
+    res.render("index.ejs");
 });
-// ,{root:__dirname}
 
-app.listen(port,()=>{
-    console.log("App is listining on port 5500");
+// Start the server
+app.listen(port, () => {
+    console.log("App is listening on port " + port);
 });
