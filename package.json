@@ -4,16 +4,39 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "assert": "^2.1.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.1",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "nodemon": "^3.1.9",
     "path-browserify": "^1.0.1",
+    "querystring-es3": "^0.2.1",
     "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
     "url": "^0.11.4",
-    "util": "^0.12.5"
+    "util": "^0.12.5",
+    "vm-browserify": "^1.1.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1"
-  }
+  },
+  "name": "edu",
+  "version": "1.0.0",
+  "description": "hi",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "Edu"
+  },
+  "keywords": [
+    "hai"
+  ],
+  "author": "ck",
+  "license": "ISC"
 }
