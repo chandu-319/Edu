@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Registering</title>
+    <!-- Add Font Awesome CDN for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fcfcfc, #2d37f3);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 90%;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .container h1 {
+            color: #2d8659;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .container p {
+            margin: 15px 0;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+        .webinar-details {
+            background: #f7fbfc;
+            border: 2px solid #2196F3;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+        .webinar-details h2 {
+            margin-bottom: 10px;
+            color: #1e88e5;
+            font-size: 1.5rem;
+        }
+        .webinar-details p {
+            font-size: 1rem;
+            color: #333;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: white;
+            background: linear-gradient(90deg, #4CAF50, #2d8659);
+            text-decoration: none;
+            border-radius: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+        .btn i {
+            margin-right: 10px; /* Adds space between icon and text */
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+
+        /* Media Queries for responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            .container h1 {
+                font-size: 2rem;
+            }
+            .container p {
+                font-size: 1rem;
+            }
+            .webinar-details {
+                padding: 15px;
+            }
+            .webinar-details h2 {
+                font-size: 1.2rem;
+            }
+            .btn {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            .container h1 {
+                font-size: 1.8rem;
+            }
+            .container p {
+                font-size: 0.9rem;
+            }
+            .webinar-details h2 {
+                font-size: 1.1rem;
+            }
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thank You for Registering!</h1>
+        <p>Your registration for the webinar was successful. We are excited to have you join us!</p>
+
+        <div class="webinar-details">
+            <h2>Webinar Details</h2>
+            <p><strong>Topic:</strong>Learnings from JEE Mains January Attempt: Ace the April Attempt </p>
+            <p><strong>Date:</strong> 2nd February,2025</p>
+            <p><strong>Time:</strong> 5:00 p.m.</p>
+            <p><strong>Platform:</strong> To get webinar link and notes access join the whatsapp community.</p>
+        </div>
+
+        <p>Please click the button below to join the whatsapp community.</p>
+        <a href="https://chat.whatsapp.com/GN0Zy5LgLRZ1uoPaRnRO5y" class="btn"><i class="fab fa-whatsapp"></i>Join via WhatsApp</a>
+    </div>
+    <footer>
+        &copy; KNS education All rights reserved.
+    </footer>
+</body>
+</html>
