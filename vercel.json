@@ -6,14 +6,10 @@
         "use": "@vercel/node"
       }
     ],
-    "routes": [
+    "rewrites": [
       {
-        "src": "/(.*)",
-        "dest": "app.js"
-      },
-      {
-        "src": "/public/(.*)",
-        "dest": "/public/$1"
+        "source": "/(.*)",
+        "destination": "/app.js"
       }
     ],
     "headers": [
@@ -22,7 +18,7 @@
         "headers": [
           {
             "key": "Content-Security-Policy",
-            "value": "default-src 'none'; font-src 'self' https://fonts.gstatic.com https://edu-nkdh-git-main-chandrakanths-projects-f64296af.vercel.app;"
+            "value": "default-src 'none'; font-src 'self' https://edu-nkdh.vercel.app;"
           }
         ]
       }
